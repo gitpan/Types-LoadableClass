@@ -18,11 +18,25 @@ my $meta = {
   "no_index"       => { directory => ["eg", "examples", "inc", "t", "xt"] },
   "prereqs"        => {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
-                        develop => { recommends => { "Dist::Inkt" => 0.001 } },
-                        test => { requires => { "Test::More" => 0.96 } },
+                        develop   => { recommends => { "Dist::Inkt" => 0.001 } },
+                        runtime   => {
+                                       requires => {
+                                         "Class::Load"     => 0,
+                                         "Module::Runtime" => 0,
+                                         "perl"            => 5.006001,
+                                         "Type::Library"   => 0.026,
+                                         "Type::Utils"     => 0.026,
+                                         "Types::Standard" => 0.026,
+                                       },
+                                     },
+                        test      => {
+                                       recommends => { Moo => "1.000000" },
+                                       requires   => { "Test::Fatal" => 0, "Test::More" => 0.96, "Test::Requires" => 0.06 },
+                                       suggests   => { Moose => "2.0000" },
+                                     },
                       },
   "provides"       => {
-                        "Types::LoadableClass" => { file => "lib/Types/LoadableClass.pm", version => 0.001 },
+                        "Types::LoadableClass" => { file => "lib/Types/LoadableClass.pm", version => 0.002 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -37,7 +51,7 @@ my $meta = {
                                         },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/Types-LoadableClass/project",
                       },
-  "version"        => 0.001,
+  "version"        => 0.002,
   "x_contributors" => ["Dagfinn Ilmari Manns\xE5ker (ILMARI) <ilmari\@cpan.org>"],
 };
 

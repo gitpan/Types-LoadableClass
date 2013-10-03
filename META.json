@@ -35,16 +35,34 @@
             "Dist::Inkt" : "0.001"
          }
       },
-      "test" : {
+      "runtime" : {
          "requires" : {
-            "Test::More" : "0.96"
+            "Class::Load" : "0",
+            "Module::Runtime" : "0",
+            "Type::Library" : "0.026",
+            "Type::Utils" : "0.026",
+            "Types::Standard" : "0.026",
+            "perl" : "5.006001"
+         }
+      },
+      "test" : {
+         "recommends" : {
+            "Moo" : "1.000000"
+         },
+         "requires" : {
+            "Test::Fatal" : "0",
+            "Test::More" : "0.96",
+            "Test::Requires" : "0.06"
+         },
+         "suggests" : {
+            "Moose" : "2.0000"
          }
       }
    },
    "provides" : {
       "Types::LoadableClass" : {
          "file" : "lib/Types/LoadableClass.pm",
-         "version" : "0.001"
+         "version" : "0.002"
       }
    },
    "release_status" : "stable",
@@ -62,7 +80,7 @@
          "web" : "https://github.com/tobyink/p5-types-loadableclass"
       }
    },
-   "version" : "0.001",
+   "version" : "0.002",
    "x_contributors" : [
       "Dagfinn Ilmari Mannsåker (ILMARI) <ilmari@cpan.org>"
    ]
