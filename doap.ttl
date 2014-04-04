@@ -32,7 +32,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "Types-LoadableClass";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/Types-LoadableClass/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Types-LoadableClass/v_0-002>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/Types-LoadableClass/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Types-LoadableClass/v_0-002>, <http://purl.org/NET/cpan-uri/dist/Types-LoadableClass/v_0-003>;
 	doap:repository      [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-types-loadableclass>;
@@ -62,6 +62,21 @@
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-LoadableClass-0.002.tar.gz>;
 	doap:revision        "0.002"^^xsd:string.
 
+<http://purl.org/NET/cpan-uri/dist/Types-LoadableClass/v_0-003>
+	a                    doap:Version;
+	dc:identifier        "Types-LoadableClass-0.003"^^xsd:string;
+	dc:issued            "2013-04-04"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			rdfs:label "Various features inspired by RT#91802";
+			doap-changeset:thanks <urn:uuid:580d3dfe-fe45-42ef-9f58-1310ffee7004>;
+			rdfs:seeAlso <https://rt.cpan.org/Ticket/Display.html?id=91802>;
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-LoadableClass-0.003.tar.gz>;
+	doap:revision        "0.003"^^xsd:string.
+
 <http://purl.org/NET/cpan-uri/person/ilmari>
 	a                    foaf:Person;
 	foaf:mbox            <mailto:ilmari@cpan.org>;
@@ -75,4 +90,8 @@
 	foaf:name            "Toby Inkster";
 	foaf:nick            "TOBYINK";
 	foaf:page            <https://metacpan.org/author/TOBYINK>.
+
+<urn:uuid:580d3dfe-fe45-42ef-9f58-1310ffee7004>
+	foaf:mbox            <mailto:bpj@melroch.se>;
+	foaf:name            "Benct Philip Jonsson".
 

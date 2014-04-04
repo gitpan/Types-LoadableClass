@@ -18,6 +18,7 @@ t/all_imports.t
 t/basic-moo.t
 t/basic.t
 t/clobber_dollerunderscore.t
+t/expand-prefix.t
 t/lib/ClobberDollarUnderscore.pm
 t/lib/FooBarTestClass.pm
 t/lib/FooBarTestClassMoo.pm
